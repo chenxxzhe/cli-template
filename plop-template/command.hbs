@@ -1,0 +1,22 @@
+import fs from 'fs'
+import path from 'path'
+import chalk from 'chalk'
+import {Command} from 'commander'
+
+interface Params {
+
+}
+
+export default function install(program: Command): void {
+  program
+    .command('{{name}}')
+    .description('')
+    .option('')
+    .action(async (opts: Params) => {
+      await {{name}}()
+    })
+}
+
+export async function {{name}}(): Promise<void> {
+
+}
